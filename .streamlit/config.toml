@@ -1,0 +1,17 @@
+# Theme lives here rather than in code so it applies before the first render.
+# Dark base with a single yellow accent.
+# Swap primaryColor to "#4C8BF5" for a neutral blue if not lean on brand colours.
+
+[theme]
+base = "dark"
+primaryColor = "#FFE600"
+backgroundColor = "#0F1116"
+secondaryBackgroundColor = "#191C24"
+textColor = "#E8EAED"
+font = "sans serif"
+
+[server]
+maxUploadSize = 50
+
+[browser]
+gatherUsageStats = false

@@ -1,0 +1,16 @@
+# environments
+.venv/
+.env
+.streamlit/secrets.toml
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# os
+.DS_Store
+
+# data (EY source data stays out of version control)
+data/raw/
+data/holdout/

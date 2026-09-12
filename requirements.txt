@@ -1,0 +1,24 @@
+# core
+pandas==3.0.5
+numpy==2.4.6
+scikit-learn==1.9.0
+scipy==1.18.0
+joblib==1.5.3
+
+# excel input
+xlrd==2.0.2
+openpyxl==3.1.5
+
+# dashboard
+streamlit==1.61.1
+plotly==6.9.0
+
+# notebooks and figures
+jupyter==1.1.1
+ipykernel==7.3.0
+matplotlib==3.11.1
+
+# explainer
+shap==0.52.0
+openai==2.53.0
+python-dotenv==1.2.2

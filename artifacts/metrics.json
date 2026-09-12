@@ -1,0 +1,59 @@
+{
+  "config": {
+    "model": "RandomForestClassifier",
+    "class_weight": "balanced",
+    "n_estimators": 433,
+    "max_features": "log2",
+    "min_samples_leaf": 1,
+    "max_depth": null,
+    "min_df": {
+      "Col1": 5,
+      "Col4": 5,
+      "Col6": 3
+    },
+    "date_branch": false,
+    "thresholds": null
+  },
+  "cv": {
+    "n_splits": 3,
+    "seeds": [
+      42,
+      7,
+      2024
+    ],
+    "macro_f1_mean": 0.7402437223740348,
+    "macro_f1_std": 0.024152176098165137,
+    "macro_f1_by_seed": {
+      "42": 0.7345478756537838,
+      "7": 0.7139255796123857,
+      "2024": 0.7722577118559347
+    },
+    "balanced_accuracy_seed42": 0.8063837327278083,
+    "accuracy_seed42": 0.9378179762577727,
+    "n_validated": 5307
+  },
+  "baselines": {
+    "dummy_macro_f1_seed42": 0.1877,
+    "dummy_accuracy_seed42": 0.8843,
+    "untuned_rf_macro_f1_mean_3seeds": 0.7325,
+    "untuned_rf_macro_f1_seed42": 0.7554
+  },
+  "rejected": {
+    "two_stage": 0.6509,
+    "two_stage_weighted": 0.6791,
+    "threshold_tuning": "did not generalize across seeds",
+    "date_branch": "no measurable effect",
+    "col4_missing_indicator": "91.5% vs 88.3% Category_1, not meaningful"
+  },
+  "notes": {
+    "metric_scope": "macro F1 over the 5 classes present in validation; Category_5 never validated",
+    "accuracy_ceiling": 0.9997,
+    "train_rows": 5309
+  },
+  "holdout": {
+    "macro_f1": 0.900320572048367,
+    "balanced_accuracy": 0.9599343185550083,
+    "accuracy": 0.9338983050847458,
+    "n": 590
+  }
+}
